@@ -23,6 +23,7 @@ button {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -38,6 +39,7 @@ a {
 }
 
 section {
+  scroll-margin-top: 64px;
   @media (max-width: 1200px) {
     padding: 6rem 0rem !important;
   }
