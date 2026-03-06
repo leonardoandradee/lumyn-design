@@ -1,0 +1,159 @@
+.swiper {
+  width: 520px;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.count {
+  font-size: 12px;
+  color: white;
+}
+
+.progress {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.progress-part {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: white;
+}
+
+.btn-primary {
+  position: relative;
+  display: flex;
+  align-self: center;
+  z-index: 50;
+  a {
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    font-size: 1.8rem;
+    line-height: 120%;
+    margin-right: 1.6rem;
+    transition: color 0.3s ease;
+  }
+  &:hover {
+    a {
+      color: var(--purple-01);
+    }
+  }
+}
+
+.btn-about,
+.tag-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 0.8rem 1.2rem;
+  border-radius: 3.2rem;
+  &:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  .icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: var(--purple-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+    img {
+      width: 2rem;
+      height: 2rem;
+      z-index: 10;
+    }
+  }
+  .text {
+    p {
+      font-size: 1.4rem;
+      color: var(--black);
+      font-weight: 400;
+    }
+  }
+}
+
+.slide-cases {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  .swiper-wrapper {
+    .swiper-slide {
+      .case {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .image {
+          width: 100%;
+        }
+        .info {
+          width: 100%;
+          margin-left: 10.4rem;
+          h3 {
+            font-size: 2.4rem;
+            color: var(--black);
+            font-weight: 600;
+            margin-bottom: 2.4rem;
+          }
+          .tags {
+            display: flex;
+            .tag-code {
+              padding-right: 2.4rem;
+              .icon {
+                img {
+                  width: 40%;
+                }
+              }
+            }
+          }
+          .description {
+            margin-top: 3.2rem;
+            font-size: 1.6rem;
+            color: var(--gray-600);
+            line-height: 150%;
+            font-weight: 400;
+          }
+          .btn-primary {
+            a {
+              margin-top: 4rem;
+              color: var(--black);
+              &:hover {
+                color: var(--purple-01);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

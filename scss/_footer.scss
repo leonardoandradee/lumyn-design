@@ -1,0 +1,17 @@
+footer {
+  background-color: var(--black);
+  padding: 4.8rem 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 1.4rem;
+      color: var(--white);
+      font-weight: 400;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

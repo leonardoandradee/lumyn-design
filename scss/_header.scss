@@ -1,0 +1,35 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(7, 9, 13, 0.5);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--blue);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2rem 0;
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          &:not(:last-child) {
+            margin-right: 3.2rem;
+          }
+          a {
+            font-family: "Poppins", sans-serif;
+            color: var(--white);
+            font-size: 1.6rem;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: var(--purple-01);
+            }
+          }
+        }
+      }
+    }
+  }
+}
