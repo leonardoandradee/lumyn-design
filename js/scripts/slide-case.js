@@ -9,4 +9,9 @@ var slide_cases = new Swiper(".slide-cases", {
     prevEl: ".s-cases .top-container .btn-prev",
   },
   speed: 600,
+  breakpoints: {
+    360: {
+      spaceBetween: 10,
+    },
+  },
 });
