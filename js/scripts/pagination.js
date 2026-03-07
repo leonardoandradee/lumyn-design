@@ -5,7 +5,9 @@ const count = document.querySelector(".count");
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
+  spaceBetween: 0,
   loop: true,
+  speed: 800,
 
   autoplay: {
     delay: duration,
